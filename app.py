@@ -26,8 +26,12 @@ if pagina == "Início":
     st.markdown("""
     ### Sustentabilidade ao alcance de todos
 
-    Aplicativo criado para auxiliar moradores de condomínios
-    na separação correta dos resíduos e incentivar práticas sustentáveis.
+    O EcoCondomínio é um protótipo de aplicativo desenvolvido para incentivar
+    a reciclagem em condomínios residenciais por meio da educação ambiental e
+    da divulgação de informações sobre coleta seletiva.
+
+    O projeto busca conscientizar moradores sobre a importância da separação
+    correta dos resíduos e incentivar práticas sustentáveis no dia a dia.
     """)
 
     st.success(
@@ -100,11 +104,17 @@ elif pagina == "Indicadores":
 
     with col3:
         st.metric(
-            "Acharam o app útil",
+            "Consideraram o app útil",
             "90%"
         )
 
-    st.write("Resultados obtidos durante a validação da proposta.")
+    st.markdown("""
+    ### Resultados da Validação
+
+    - 40% dos participantes afirmaram conhecer corretamente a separação dos resíduos.
+    - 90% consideraram o aplicativo útil para incentivar a reciclagem.
+    - 100% acreditam que a tecnologia pode contribuir para aumentar a conscientização ambiental.
+    """)
 
 elif pagina == "Dicas":
     st.title("🌱 Dicas Sustentáveis")
@@ -122,3 +132,9 @@ elif pagina == "Dicas":
     """)
 
     st.balloons()
+
+st.divider()
+
+st.caption(
+    "Projeto desenvolvido por Marina Frigo | RU: 4492780 | Curso: Tecnologia em Ciência de Dados | UNINTER"
+)
